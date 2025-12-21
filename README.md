@@ -30,6 +30,8 @@ By renaming the .pm file to .sp as specified, you can employ the BSIM-CMG model 
 Note: These models use Verilog-A format (.va files), compiled via the OpenVAF compiler into .osdi files. Place the resulting .osdi files in the same working directory as your .sp file.
 
 ### References
-[1] SIMULATION AND CHARACTERISATION OF FINFET CIRCUITS USING ASAP - 7nm TECHNOLOGY [EDA - XSCHEM AND NGSPICE]: https://github.com/AsahiroKenpachi/asap_7nm_Xschem
-[2] Ngspice User’s Manual, Version 45 (ngspice release version): https://ngspice.sourceforge.io/docs/ngspice-manual.pdf
-[3] Xschem Beginner's Guide: http://repo.hu/projects/xschem/xschem_man/xschem_man.html
+[1] SIMULATION AND CHARACTERISATION OF FINFET CIRCUITS USING ASAP - 7nm TECHNOLOGY [EDA - XSCHEM AND NGSPICE]: https://github.com/AsahiroKenpachi/asap_7nm_Xschem <br>
+
+[2] Ngspice User’s Manual, Version 45 (ngspice release version): https://ngspice.sourceforge.io/docs/ngspice-manual.pdf <br>
+
+[3] Xschem Beginner's Guide: http://repo.hu/projects/xschem/xschem_man/xschem_man.html <br>
