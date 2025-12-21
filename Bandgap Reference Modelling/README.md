@@ -2,13 +2,13 @@
 
 #### Following parameters to begin with:
 
-Supply Voltage (DC) -> 1.75V
-Reference Resistance -> 50KΩ (ohms)
-Resistance near PTAT circuit -> 33KΩ (ohms)
-Temparature range -> -45°C to 125°C
-Output voltage -> 1.6V
-Runiq bias out 677
+Supply Voltage (DC) -> 1.75V <br>
+Reference Resistance -> 50KΩ (ohms) <br>
+Resistance near PTAT circuit -> 33KΩ (ohms) <br>
+Temparature range -> -45°C to 125°C <br>
+Output voltage -> 1.6V <br>
+Runiq bias out 677 <br>
 
 
 ### Reference Schematic for the SBCM configuration:
-[****](https://github.com/sagainfinite/) <br>
+[**Schematic for Reference**](https://github.com/sagainfinite/) <br>
