@@ -33,3 +33,6 @@ Add **NFET cascode current sinks** for load matching: **MP3** as cascode, **MP4*
 <br><br>
 ## ACKNOWLEDGEMENT
 To give thanks to Mr. Kunal Ghosh (Co-Founder of VSD) at [LinkedIn Profile](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/), RS Madhuri at [LinkedIn Profile](https://www.linkedin.com/in/royyurumadhuri/) and her [Git Repo for reference](https://github.com/vsdip/vsd-7nm/tree/main/Bandgap-Reference-Circuit-with-SCMB-with-ASAP-7nm-PDK-) as well as to the crew team at VSD!
+
+### References
+[1] [Band Gap Reference Circuit (BGR)](https://github.com/vsdip/vsdopen2021_bgr)
