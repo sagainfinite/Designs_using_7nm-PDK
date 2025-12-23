@@ -27,12 +27,28 @@ BSIM-CMG, or Berkeley Short-channel IGFET Model for the Common Multi-Gate Struct
 Using BSIM-CMG for Inverter Simulation
 By renaming the .pm file to .sp as specified, you can employ the BSIM-CMG model for your inverter simulations. To access the latest FinFET models, visit the official site: https://www.bsim.berkeley.edu/models/bsimcmg/.
 
-Note: These models use Verilog-A format (.va files), compiled via the OpenVAF compiler into .osdi files. Place the resulting .osdi files in the same working directory as your .sp file.
+**Note:** Place the resulting .osdi files in the same working directory as your .sp file.
 <br><br>
 
-**Xschem of nFET:**
-<img width="1062" height="820" alt="xschem of nfet char" src="https://github.com/user-attachments/assets/56a056db-2769-4283-8891-689cdef69795" />
+### Creating the schematic of the N-FET
+Open the Xschem in terminal with the command ```xschem``` to launch the Xschem Environment. <br><br>
+Use the shortcut: ```Shift + I``` to Insert symbol. <br><br>
 
+**Choose Symbol window pops up:** <br>
+<img width="1084" height="957" alt="default setting for &#39;insert symbol&#39;" src="https://github.com/user-attachments/assets/60d8f6b2-e7ae-4987-9796-9edcfa7b0ee3" /><br><br>
+Hit ```Current dir``` in the window pop-up and find the ASAP7 7nm folder repo for the symbol. <br><br>
+**Select the nfet "asap_7nm_nfet.sym" required** <br>
+<img width="1034" height="926" alt="find symbol in asap_7nm" src="https://github.com/user-attachments/assets/b14651a1-b2a4-4515-99ba-2abd4a5e08e3" />
+<br><br>
+**Xschem of nFET:**<br>
+<img width="1062" height="820" alt="xschem of nfet char" src="https://github.com/user-attachments/assets/56a056db-2769-4283-8891-689cdef69795" />
+<br><br>
+**I<sub>D</sub> Graph for nFET:** <br>
+<img width="1419" height="641" alt="Id char for nfet" src="https://github.com/user-attachments/assets/1aa0e74c-683c-4d21-9292-a6b97a22851f" />
+<br><br>
+**I<sub>D</sub> vs V<sub>D</sub> Graph for nFET:** <br>
+<img width="1421" height="787" alt="Id vs Vd graph of nfet" src="https://github.com/user-attachments/assets/a6137e64-befa-43b8-94cf-9847f0f036c6" />
+<br><br><br>
 ## ACKNOWLEDGEMENT
 To give thanks to Mr. Kunal Ghosh (Co-Founder of VSD) at [LinkedIn Profile](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/), RS Madhuri at [LinkedIn Profile](https://www.linkedin.com/in/royyurumadhuri/) and her [Git Repo for reference](https://github.com/vsdip/vsd-7nm/tree/main) as well as to the crew team at VSD!
 <br><br>
