@@ -50,7 +50,8 @@ Plot the inverter V<sub>TC</sub> from SPICE DC sweep, V<sub>th</sub> is the inte
 meas dc vth when nfet_out = nfet_in
 ```
 <br>
-**Vth measured graphically:**
+
+**Vth measured graphically: Intersection point**
 <img width="1117" height="1011" alt="Screenshot 2025-12-15 191811" src="https://github.com/user-attachments/assets/bb84ab20-68c3-438f-a8a3-06196c580981" />
 
 #### Gain (Av) and Maximum Gain
