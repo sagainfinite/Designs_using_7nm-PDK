@@ -29,7 +29,6 @@ pre_osdi /home/<user>/Desktop/asap_7nm_Xschem/bsimcmg.osdi
 <img width="830" height="889" alt="inverter_vtc s2 p6" src="https://github.com/user-attachments/assets/fc02d656-c466-4374-abce-bed48a0552fd" />
 <img width="821" height="808" alt="inverter_vtc s2 p7" src="https://github.com/user-attachments/assets/e60d9142-4989-4263-a33c-b855775887bc" />
 
-
 ### What we'll be measuring (with corresponding spice commands):
 #### Voltage Transfer Characteristic (Curve) of the inverter
 ``` plot nfet_out nfet_in       // Y-axis vs X-axis for the VTC ```
@@ -104,6 +103,9 @@ let r_out = deriv(nfet_out,id)
 plot r_out
 plot id
 ```
+**All the graphs for the Inverter:**
+<img width="1919" height="976" alt="all the graphs of inverter_vtc2" src="https://github.com/user-attachments/assets/cf7b6ae1-cfc0-4d5a-9be3-5d8cf319cfe3" />
+
 #### Propogation Delay, T<sub>p</sub>
 The difference, in time, when output switches after the application of the input. (Calculated at 50% of input-output transition)<br>
 Rise time, tr -> During transistion, output from 10% - 90% of maximum value <br>
