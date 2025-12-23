@@ -31,12 +31,9 @@ Note: These models use Verilog-A format (.va files), compiled via the OpenVAF co
 <br><br>
 ## ACKNOWLEDGEMENT
 To give thanks to Mr. Kunal Ghosh (Co-Founder of VSD) at [LinkedIn Profile](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/), RS Madhuri at [LinkedIn Profile](https://www.linkedin.com/in/royyurumadhuri/) and her [Git Repo for reference](https://github.com/vsdip/vsd-7nm/tree/main) as well as to the crew team at VSD!
-
-
-
+<br><br>
 ### References
 [1] [SIMULATION AND CHARACTERISATION OF FINFET CIRCUITS USING ASAP - 7nm TECHNOLOGY [EDA - XSCHEM AND NGSPICE]](https://github.com/AsahiroKenpachi/asap_7nm_Xschem) <br>
-
 [2] [Ngspice User’s Manual, Version 45 (ngspice release version)](https://ngspice.sourceforge.io/docs/ngspice-manual.pdf) <br>
-
 [3] [Xschem Beginner's Guide](http://repo.hu/projects/xschem/xschem_man/xschem_man.html) <br>
+[4] [NGSPICE: Open-Source Spice Simulator](https://ngspice.sourceforge.io/) <br>
