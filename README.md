@@ -7,7 +7,7 @@ Key strengths include support for multiple analyses: **DC operating points, AC f
 A standout feature is its **seamless compatibility** with other SPICE tools, allowing direct import of netlists from HSPICE, LTSpice, or Spectre. Users can extend functionality through custom scripts, user-defined models, and plugins, tailoring it for specialized needs like emerging device technologies.
 
 Common applications abound: engineers prototype analog filters or amplifiers virtually before hardware builds; educators teach circuit theory with hands-on simulations; researchers explore novel topologies, such as neuromorphic circuits or power electronics. Actively maintained by a global developer community, Ngspice receives regular updates, ensuring reliability and innovation. With its flexibility, zero cost, and cross-platform support, it democratizes advanced circuit simulation for all.
-
+<br><br>
 ## XSCHEM
 Xschem is an open-source schematic capture tool for **designing hierarchical analog/digital/mixed-signal circuits**, emphasizing speed and large-scale netlisting via a Tcl/Tk interface and C-based drawing engine.
 
@@ -20,7 +20,7 @@ Xschem is an open-source schematic capture tool for **designing hierarchical ana
 
 #### Usage Benefits
 Edit visually, simulate via "Simulation" menu (e.g., batch Ngspice for inverters), view results inline. Ideal for **7nm PDK** flows like Sky130/**ASAP7 with BSIM-CMG**, enabling rapid prototyping without external tools.
-
+<br><br>
 ## BSIM - CMG
 BSIM-CMG, or Berkeley Short-channel IGFET Model for the Common Multi-Gate Structure, serves as a compact model for simulating multi-gate transistors such as FinFETs and nanowire FETs. Developed by the Device Model Working Group (DMWG) at UC Berkeley, it advances traditional BSIM models by accurately capturing complex physics like **short-channel effects, quantum mechanical effects, and gate coupling**. **Widely adopted in semiconductor industry and academia**, it enables precise prediction of device characteristics and performance for nanoscale integrated circuit design and optimization.
 
@@ -28,10 +28,15 @@ Using BSIM-CMG for Inverter Simulation
 By renaming the .pm file to .sp as specified, you can employ the BSIM-CMG model for your inverter simulations. To access the latest FinFET models, visit the official site: https://www.bsim.berkeley.edu/models/bsimcmg/.
 
 Note: These models use Verilog-A format (.va files), compiled via the OpenVAF compiler into .osdi files. Place the resulting .osdi files in the same working directory as your .sp file.
+<br><br>
+## ACKNOWLEDGEMENT
+To give thanks to Mr. Kunal Ghosh (Co-Founder of VSD) at [LinkedIn Profile](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/), RS Madhuri at [LinkedIn Profile](https://www.linkedin.com/in/royyurumadhuri/) and her [Git Repo for reference](https://github.com/vsdip/vsd-7nm/tree/main) as well as to the crew team at VSD!
+
+
 
 ### References
-[1] SIMULATION AND CHARACTERISATION OF FINFET CIRCUITS USING ASAP - 7nm TECHNOLOGY [EDA - XSCHEM AND NGSPICE]: https://github.com/AsahiroKenpachi/asap_7nm_Xschem <br>
+[1] [SIMULATION AND CHARACTERISATION OF FINFET CIRCUITS USING ASAP - 7nm TECHNOLOGY [EDA - XSCHEM AND NGSPICE]](https://github.com/AsahiroKenpachi/asap_7nm_Xschem) <br>
 
-[2] Ngspice User’s Manual, Version 45 (ngspice release version): https://ngspice.sourceforge.io/docs/ngspice-manual.pdf <br>
+[2] [Ngspice User’s Manual, Version 45 (ngspice release version)](https://ngspice.sourceforge.io/docs/ngspice-manual.pdf) <br>
 
-[3] Xschem Beginner's Guide: http://repo.hu/projects/xschem/xschem_man/xschem_man.html <br>
+[3] [Xschem Beginner's Guide](http://repo.hu/projects/xschem/xschem_man/xschem_man.html) <br>
