@@ -24,9 +24,19 @@ As I've used on the PC with Windows, I'll be using the Berkeley ' **bsimcmg.osdi
 pre_osdi /home/<user>/Desktop/asap_7nm_Xschem/bsimcmg.osdi
 .endc
 ```
+**The BSIM CMG model and its default values:**
+<img width="828" height="721" alt="inverter_vtc s2 p5" src="https://github.com/user-attachments/assets/84617c59-5691-402d-b9f1-5b7e8e313fbd" /><br>
+<img width="830" height="889" alt="inverter_vtc s2 p6" src="https://github.com/user-attachments/assets/fc02d656-c466-4374-abce-bed48a0552fd" />
+<img width="821" height="808" alt="inverter_vtc s2 p7" src="https://github.com/user-attachments/assets/e60d9142-4989-4263-a33c-b855775887bc" />
+
+
 ### What we'll be measuring (with corresponding spice commands):
 #### Voltage Transfer Characteristic (Curve) of the inverter
 ``` plot nfet_out nfet_in       // Y-axis vs X-axis for the VTC ```
+
+**VTC Graph of the Inverter:**
+<img width="1112" height="974" alt="nfet_in vs nfet_out graph of inveter_vtc" src="https://github.com/user-attachments/assets/09989884-7102-41aa-95fd-7597ba5d45ef" />
+
 #### Switching Threshold Voltage (when nFET's output = input)
 Vth is when the input voltage equals the output voltage on the voltage transfer characteristic (V<sub>TC</sub>) curve, marking the switching point. This occurs in the transition region where both NFET and PFET operate in saturation, with equal drain currents. <br>
 **Note:** 
@@ -40,6 +50,9 @@ Plot the inverter V<sub>TC</sub> from SPICE DC sweep, V<sub>th</sub> is the inte
 ```
 meas dc vth when nfet_out = nfet_in
 ```
+<br>
+**Vth measured graphically:**
+<img width="1117" height="1011" alt="Screenshot 2025-12-15 191811" src="https://github.com/user-attachments/assets/bb84ab20-68c3-438f-a8a3-06196c580981" />
 
 #### Gain (Av) and Maximum Gain
 Gain is the ratio of change in output voltage to that of the input voltage. <br>
@@ -81,6 +94,9 @@ let gm = real(deriv(id,nfet_in))
 meas dc gm_max MAX gm     // check it in the graph for the gm_max peak
 plot gm 
 ```
+**The values of the parameters computed:**
+<img width="1334" height="770" alt="the values of v_th and other parameters" src="https://github.com/user-attachments/assets/8ebae843-35f8-4eef-b1c4-327630050abc" />
+
 #### Output Resistance, R<sub>out</sub>
 Ration of output node voltage to cchnage in the Drain current, I<sub>D</sub>
 ```
@@ -110,7 +126,8 @@ let pwr = id_pow * 0.7                   // P=V.I where VDD is 0.7V here
 let power = abs(pow/4e-11)
 print tpr tpf tp id_pow pow power       // to display the following in the terminal
 ```
-
+**Transient power and other computed values:**
+<img width="1341" height="523" alt="transient power and other values" src="https://github.com/user-attachments/assets/6a27c3c4-5571-4b3d-905d-3578a25cf098" />
 #### Frequency
 The maximum signal frequency was calculated (using the delay time, previously calculated) <br>
    f = $\frac{1}{(tr+tp)}$  where, tr -> rise time and tf -> fall time
@@ -122,10 +139,11 @@ let t_delay = tr + tf
 let f = 1/t_delay
 print t_delay f
 ```
+**With frequency and delay values:**
+<img width="977" height="912" alt="transient analysis pt2 (with freq and rise and fall time)" src="https://github.com/user-attachments/assets/aa05ba72-489e-42a6-b4a0-b05fe1a348cb" />
 
 <br><br>
 
-![Xschem of nFET](<img width="1062" height="820" alt="xschem of nfet char" src="https://github.com/user-attachments/assets/56a056db-2769-4283-8891-689cdef69795" />)
 
 <br><br>
 
