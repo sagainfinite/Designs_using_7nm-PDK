@@ -15,6 +15,7 @@ Runiq bias out 677 <br>
 ### Reference Schematic for the SBCM configuration:
 ![**Schematic for Reference**](https://github.com/sagainfinite/Designs_using_7nm-PDK/blob/main/Bandgap%20Reference%20Modelling/reference_img_for_bandgap.png) <br>
 
+#### Step-wise Schematic creation
 I begin with the **PTAT current generator**: Place a 33kΩ resistor **R1** between the drain of diode-connected NFETs **Q2** (gate-drain shorted), then connect identical NFETs **MN2** to ground. This creates the voltage difference across R1 that generates current rising linearly with temperature.
 
 Next, construct the **self-biased cascode current mirror** using PFETs for high PSRR: **MP1** serves as diode-connected cascode (gate-drain shorted to net2), **MP2** mirrors current to the PTAT branch, and **MP6** biases the common gate (net2) for all PFET branches. This SBCM configuration ensures accurate current copying with high output impedance without external bias.
@@ -27,9 +28,8 @@ Add **NFET cascode current sinks** for load matching: **MP3** as cascode, **MP4*
 
 **Signal flow**: PTAT (R1→voltage difference→SBCM→cascode sinks) + CTAT (Vctat via R2 divider) → Vref (~1.2V, zero tempco). The R2/R1 ratio and transistor matching determine temperature coefficient cancellation.
 
+### Xschem Schematic of Bandgap Reference
 ![**Xschem Schematic of Bandgap Reference**](https://github.com/sagainfinite/Designs_using_7nm-PDK/blob/main/Bandgap%20Reference%20Modelling/Xschem%20SS%20of%20BGR.png) <br>
-
-
-
+<br><br>
 ## ACKNOWLEDGEMENT
 To give thanks to Mr. Kunal Ghosh (Co-Founder of VSD) at [LinkedIn Profile](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/), RS Madhuri at [LinkedIn Profile](https://www.linkedin.com/in/royyurumadhuri/) and her [Git Repo for reference](https://github.com/vsdip/vsd-7nm/tree/main/Bandgap-Reference-Circuit-with-SCMB-with-ASAP-7nm-PDK-) as well as to the crew team at VSD!
