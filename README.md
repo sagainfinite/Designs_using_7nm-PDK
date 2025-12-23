@@ -29,6 +29,10 @@ By renaming the .pm file to .sp as specified, you can employ the BSIM-CMG model 
 
 Note: These models use Verilog-A format (.va files), compiled via the OpenVAF compiler into .osdi files. Place the resulting .osdi files in the same working directory as your .sp file.
 <br><br>
+
+**Xschem of nFET:**
+<img width="1062" height="820" alt="xschem of nfet char" src="https://github.com/user-attachments/assets/56a056db-2769-4283-8891-689cdef69795" />
+
 ## ACKNOWLEDGEMENT
 To give thanks to Mr. Kunal Ghosh (Co-Founder of VSD) at [LinkedIn Profile](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/), RS Madhuri at [LinkedIn Profile](https://www.linkedin.com/in/royyurumadhuri/) and her [Git Repo for reference](https://github.com/vsdip/vsd-7nm/tree/main) as well as to the crew team at VSD!
 <br><br>
